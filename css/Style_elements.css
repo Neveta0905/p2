@@ -1,0 +1,252 @@
+/* General */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*{
+font-family: Raleway,Arial black,Calibri;
+}
+
+body{
+	margin: 0px;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+footer{
+	background: #F2F2F2;
+}
+
+img{
+	max-width: 100%;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	display: contents;
+}
+
+.blue_star,.grey_star{
+	font-size: 11px;
+}
+.blue_star{
+	color: #0065FC;
+}
+
+.grey_star{
+	color: #F2F2F2;
+}
+
+.price{
+	font-weight: bold;
+}
+
+h4{
+	font-size: 15px;
+}
+
+/* Header */
+header{
+	display: flex;
+	flex-direction: row;
+}
+
+header .logo{
+	flex: 1;
+	display: block;
+	max-width: 100%;
+}
+header h2 *{
+	color:#0065FC;
+}
+
+header h2:hover{
+	border-top:#0065FC solid 3px;
+}
+
+
+#header_categorie{
+	display: flex;
+}
+
+#header_categorie h2{
+	flex-direction: row;
+	margin-top: 0px;
+	margin-right: 70px;
+}
+
+/* Nav */
+nav,main{
+	margin-left: 5px;
+}
+#Search form{
+	display: flex;
+	height: 40px;
+	margin-bottom: 5px;
+}
+
+#Search i {
+	background: #F2F2F2;
+	padding: 10px;
+	border-top-left-radius: 25%;
+	border-bottom-left-radius: 25%;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+#Search button{
+	background: #0065FC;
+	color: white;
+	border: none;
+	margin-left: 0px;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+#Search button:active{
+	background: #DEEBFF;
+}
+
+
+/* Footer */
+.footer_list{
+	display: flex;
+	justify-content: space-around;
+	width: 55%;
+}
+.footer_title_list{
+	font-weight: bold;
+}
+
+footer ul{
+	list-style: none;
+}
+
+footer ul li{
+	margin-top: 10px;
+}
+
+
+/* Filtres */
+#filters{
+	flex-direction: row;
+	display: flex;
+	vertical-align: middle;
+}
+
+#filters h3{
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	margin: 0px;
+}
+
+.Filter{
+	display: flex;
+	flex-direction: row;
+	margin-left: 25px;
+	border: #F2F2F2 solid 1px;
+	height: min-content;
+	border-radius: 15px;
+}
+
+.Filter:hover{
+	cursor: pointer;
+	border: yellow solid 1px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.Filter i{
+	color: #0065FC;
+	background: #DEEBFF;
+	padding: 5px;
+	border-radius: 50%;
+	margin: 0px;
+	width: 30px;
+	height: 30px;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	position: relative;
+	right: 5px;
+}
+
+.Filter p{
+	margin: 0px;
+	margin-left: 5px;
+	margin-right: 5px;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+
+
+/* Marseille beauty*/
+#Marseille_accommodations{
+	background: #F2F2F2;
+	border-radius: 15px;
+}
+
+.accommodation{
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	border-radius: 15px;
+	border: white 2px solid;
+	border-radius: 15px;
+	background: white;
+}
+
+.accommodation:hover{
+	border: 2px solid yellow;
+}
+
+.Marseille_acco_description *{
+	margin: 0px;
+	margin-left: 3px;
+}
+
+#Marseille_accommodations img{
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+/* Popular Beauty */
+#Populars{
+	background: #F2F2F2;
+}
+
+.Popular_accommodation{
+	display: flex;
+	background: white;
+	border: 2px white solid;
+	border-radius: 15px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.Popular_accommodation:hover{
+	border: 2px yellow solid;
+}
+
+/* Activities Beauty */
+.Activity{
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	border-radius: 15px;
+}
+.Activity:hover{
+	border: yellow 1px solid;
+}
+
+.Activity *{
+	margin: 0px;
+}
+
+.Activity p{
+	background: white;
+	border-radius: 15px;
+	padding: 5px;
+}
+
+.Activity img{
+	flex: 1;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}

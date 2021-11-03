@@ -1,0 +1,112 @@
+#accommodations_part{
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 15px;
+}
+
+/* Placement Marseille*/
+#Marseille_accommodations{
+	max-width: 60%;
+	padding: 20px;
+}
+
+#Marseille_accommodations_row{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	max-width: 90%;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.accommodation{
+	margin: 8px;
+}
+
+.accommodation img{
+	display: block;
+	height: 68px;
+}
+
+img, .Marseille_acco_description{
+	width: 157px;
+}
+
+a{
+	display: contents;
+}
+
+
+/* Popular Placement */
+#Populars{
+	width: 35%;
+	padding: 15px;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+}
+
+#Popular_header{
+	display: flex;
+}
+
+	#Popular_header h1{
+	flex: 1;
+	}
+
+	#Popular_header i{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+#Popular_column{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	flex: 1;
+}
+
+.Popular_accommodation{
+	margin: 5px;
+}
+
+
+#Populars img{
+	display: block;
+	width: 140px;
+	height: 104px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+#Popular_description {
+	display: flex;
+	flex-direction: column;
+	margin-left: 2px;
+}
+
+#Popular_description *{
+	margin: 0px;
+}
+
+#Popular_description_text{
+	flex: 1;
+}
+
+/* Activities placement */
+#Activities{
+	display: flex;
+	justify-content: space-around;
+}
+
+.Activity{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+
+#Activities img{
+	display: block;
+	width: 220px;
+}
