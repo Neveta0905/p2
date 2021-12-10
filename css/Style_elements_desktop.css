@@ -1,3 +1,15 @@
+header h2:hover{
+	border-top:#0065FC solid 3px;
+}
+
+header h2{
+	margin-right: 20px;
+}
+
+.loupe{
+	visibility: hidden;
+}
+
 #accommodations_part{
 	display: flex;
 	justify-content: space-around;
@@ -6,31 +18,30 @@
 
 /* Placement Marseille*/
 #Marseille_accommodations{
-	max-width: 60%;
-	padding: 20px;
+	width: 60%;
+	padding: 10px;
+	background: #F2F2F2;
 }
 
-#Marseille_accommodations_row{
+.Marseille_accommodations_row{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	max-width: 90%;
-	padding-bottom: 20px;
+	justify-content: space-evenly;
 	padding-top: 20px;
 }
 
 .accommodation{
 	margin: 8px;
+	width: 210px;
 }
 
 .accommodation img{
 	display: block;
-	height: 68px;
+	height: 100px;
 }
 
-img, .Marseille_acco_description{
-	width: 157px;
-}
+
+
 
 a{
 	display: contents;
@@ -39,7 +50,7 @@ a{
 
 /* Popular Placement */
 #Populars{
-	width: 35%;
+	width: 28%;
 	padding: 15px;
 	border-radius: 15px;
 	display: flex;
@@ -74,48 +85,87 @@ a{
 
 #Populars img{
 	display: block;
-	width: 140px;
-	height: 104px;
+	width: 117px;
+	height: 113px;
 	border-top-left-radius: 15px;
 	border-bottom-left-radius: 15px;
 }
 
-#Popular_description {
-	display: flex;
-	flex-direction: column;
-	margin-left: 2px;
+
+
+.Popular_description{
+	padding: 10px;
 }
 
-#Popular_description *{
-	margin: 0px;
-}
-
-#Popular_description_text{
+.Popular_description_text{
 	flex: 1;
 }
 
-/* Activities placement */
-#Activities{
-	display: flex;
-	justify-content: space-evenly;
-	margin-bottom: 15px;
-	margin-left: 10px;
-	margin-right: 10px;
+.Popular_description_text h4{
+	font-size: 15px;
 }
 
-.Activity{
+.Popular_description_text p{
+	font-size: 12px;
+}
+
+/* Activities */
+.activities{
+	display: flex;
+	justify-content: space-around;
+	height: 500px;
+}
+
+.activity{
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	border-radius: 15px;
 	display: flex;
 	flex-direction: column;
+}
+
+.simple .activity{
+	height: 100%;
+}
+
+.double .activity{
+	max-height: 44%;
+}
+
+.activity img{
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	flex: 1;
+	max-height: 90%;
+}
+
+.activity p{
+	font-size: 16px;
+	font-weight: bold;
+	box-sizing: content-box;
+}
+
+.double img{
+	max-height: 75%;
+}
+
+.activities_column{
 	margin-bottom: 10px;
-}
-
-#Activities img{
-	display: block;
-	width: 220px;
-}
-
-.activity_column{
+	margin-top: 10px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	align-items: stretch;
+	margin: 30px;
+	margin-left: 40px;
+	margin-right: 40px;
+	justify-content: space-between;
 }
+
+.double .activity{
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.activity_name{
+	height: 50px;
+}
+

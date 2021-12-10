@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Popular</title>
+</head>
+<body>
+	<section id="Populars">
+		<div id="Popular_header">	
+			<h1>Les plus populaires</h1>
+			<i class="fas fa-chart-line"></i>
+		</div>
+
+		<div id="Popular_column">	
+			<div class="Popular_accommodation">
+				<img src="images\hebergements\4_small\aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
+
+				<div id="Popular_description">
+					<div id="Popular_description_text">	
+						<h4>Je suis le titre</h4>
+						<p>Je suis le Prix</p>
+					</div>
+
+					<div class="Popular_description_note">
+						<i>Star</i>
+						<i>Star</i>
+						<i>Star</i>
+						<i>Star</i>
+						<i>Star</i>
+					</div>
+				</div>
+			</div>
+
+			<div class="Popular_accommodation">
+				<img src="images\hebergements\4_small\aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
+
+				<div id="Popular_description">
+					<div id="Popular_description_text">	
+						<h4>Je suis le titre</h4>
+						<p>Je suis le Prix</p>
+					</div>
+
+					<div class="Popular_description_note">
+						<i>Star</i>
+						<i>Star</i>
+						<i>Star</i>
+						<i>Star</i>
+						<i>Star</i>
+					</div>
+				</div>
+			</div>
+
+			<div class="Popular_accommodation">
+				<img src="images\hebergements\4_small\aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
+
+				<div id="Popular_description">
+					<div id="Popular_description_text">	
+						<h4>Je suis le titre</h4>
+						<p>Je suis le Prix</p>
+					</div>
+
+					<div class="Popular_description_note">
+						<i>Star</i>
+						<i>Star</i>
+						<i>Star</i>
+						<i>Star</i>
+						<i>Star</i>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+</body>
+
+
+<style>
+/* Placement */
+	#Populars{
+		width: 35%;
+		padding: 15px;
+	}
+
+	#Popular_header{
+		display: flex;
+	}
+
+		#Popular_header h1{
+		flex: 1;
+		}
+
+		#Popular_header i{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+	#Popular_column{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.Popular_accommodation{
+		margin: 5px;
+	}
+
+
+	#Populars img{
+		display: block;
+		width: 140px;
+		height: 104px;
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 15px;
+	}
+
+	#Popular_description {
+		display: flex;
+		flex-direction: column;
+		margin-left: 2px;
+	}
+
+	#Popular_description *{
+		margin: 0px;
+	}
+
+	#Popular_description_text{
+		flex: 1;
+	}
+</style>
+	
+<style>
+/* Beauty */
+	#Populars{
+		background: #F2F2F2;
+	}
+
+	.Popular_accommodation{
+		display: flex;
+		background: white;
+		border: 2px white solid;
+		border-radius: 15px;
+	}
+
+	.Popular_accommodation:hover{
+		border: 2px yellow solid;
+	}
+
+
+
+</style>
+</html>

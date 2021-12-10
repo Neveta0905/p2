@@ -1,7 +1,7 @@
 /* General */
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 *{
-font-family: Raleway,Arial black,Calibri;
+	font-family: Raleway,Arial black,Calibri;
 }
 
 body{
@@ -10,12 +10,11 @@ body{
 	padding-top: 0px;
 }
 
-footer{
-	background: #F2F2F2;
-}
-
 img{
+	box-sizing: content-box;
 	max-width: 100%;
+	object-fit: cover;
+	max-height: 100%;
 }
 
 a{
@@ -49,17 +48,42 @@ header{
 	flex-direction: row;
 }
 
+@media only screen and (max-width: 767px){
+	header{
+	flex-direction: column;
+	justify-content: center;
+	}
+
+	header .logo{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#header_categorie{
+	justify-content: center;
+	margin-left: 10px;
+	}
+
+	.Filter{
+		margin-bottom: 5px;
+	}
+
+	#Populars{
+	width: 90%;
+	align-self: center;
+	}
+
+	#Marseille_accommodations{
+		width: 90%;
+	}
+}	
 header .logo{
 	flex: 1;
-	display: block;
 	max-width: 100%;
 }
 header h2 *{
 	color:#0065FC;
-}
-
-header h2:hover{
-	border-top:#0065FC solid 3px;
 }
 
 
@@ -70,7 +94,18 @@ header h2:hover{
 #header_categorie h2{
 	flex-direction: row;
 	margin-top: 0px;
-	margin-right: 70px;
+}
+
+#header_categorie h2:hover *{
+	color: blue;
+}
+
+.activity_color{
+	color: grey;
+}
+
+.activity p{
+	font-weight: bold;
 }
 
 /* Nav */
@@ -83,7 +118,7 @@ nav,main{
 	margin-bottom: 5px;
 }
 
-#Search i {
+#Search .fa-map-marker-alt {
 	background: #F2F2F2;
 	padding: 10px;
 	border-top-left-radius: 25%;
@@ -106,13 +141,27 @@ nav,main{
 	background: #DEEBFF;
 }
 
+.loupe{
+	background:  blue;
+}
 
 /* Footer */
+footer{
+	background: #F2F2F2;
+}
+
 .footer_list{
 	display: flex;
-	justify-content: space-around;
-	width: 55%;
+	justify-content: space-between;
+	width: 80%;
 }
+
+@media only screen and (max-width: 767px){
+	.footer_list{
+		flex-direction: column;
+	}
+}
+
 .footer_title_list{
 	font-weight: bold;
 }
@@ -131,7 +180,15 @@ footer ul li{
 	flex-direction: row;
 	display: flex;
 	vertical-align: middle;
+	flex-wrap: wrap;
 }
+
+.filters_buttons{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
 
 #filters h3{
 	justify-content: center;
@@ -144,15 +201,16 @@ footer ul li{
 	display: flex;
 	flex-direction: row;
 	margin-left: 25px;
-	border: #F2F2F2 solid 1px;
+	border: #F2F2F2 solid 2px;
 	height: min-content;
-	border-radius: 15px;
+	border-radius: 50px;
 }
 
 .Filter:hover{
 	cursor: pointer;
 	border: yellow solid 1px;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	color: blue;
 }
 
 .Filter i{
@@ -179,20 +237,29 @@ footer ul li{
 	align-items: center;
 }
 
+@media only screen and (max-width: 767px){
+	#filters{
+	flex-direction: row;
+	display: flex;
+	flex-wrap: wrap;
+	vertical-align: middle;
+	}
+}
 
 
 /* Marseille beauty*/
 #Marseille_accommodations{
-	background: #F2F2F2;
 	border-radius: 15px;
 }
 
 .accommodation{
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	border-radius: 15px;
-	border: white 2px solid;
+	border: white 4px solid;
 	border-radius: 15px;
 	background: white;
+	display: flex;
+	flex-direction: column;
 }
 
 .accommodation:hover{
@@ -201,7 +268,18 @@ footer ul li{
 
 .Marseille_acco_description *{
 	margin: 0px;
-	margin-left: 3px;
+}
+
+.Marseille_acco_description{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	padding-top: 2px;
+	padding-left: 2px;
+}
+
+.Marseille_acco_names{
+	flex: 1;
 }
 
 #Marseille_accommodations img{
@@ -217,7 +295,7 @@ footer ul li{
 .Popular_accommodation{
 	display: flex;
 	background: white;
-	border: 2px white solid;
+	border: 4px white solid;
 	border-radius: 15px;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -226,27 +304,38 @@ footer ul li{
 	border: 2px yellow solid;
 }
 
-/* Activities Beauty */
-.Activity{
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-	border-radius: 15px;
-}
-.Activity:hover{
-	border: yellow 1px solid;
+.Popular_description{
+	display: flex;
+	flex-direction: column;
 }
 
-.Activity *{
+.Popular_description *{
 	margin: 0px;
 }
 
-.Activity p{
-	background: white;
-	border-radius: 15px;
-	padding: 5px;
+.Popular_description_text{
+	flex: 1;
 }
 
-.Activity img{
-	flex: 1;
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
+/* Activities beauty */
+.activity{
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+.activity p{
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	padding-left: 3px; 
+	padding-top: 3px;
+}
+
+.activity_name{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background: white;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+
