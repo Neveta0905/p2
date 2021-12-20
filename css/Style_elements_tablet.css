@@ -1,6 +1,6 @@
 #accommodations_part{
 	display: flex;
-	flex-direction: column;
+	flex-direction: column-reverse;
 	margin-bottom: 15px;
 }
 header h2{
@@ -15,12 +15,14 @@ header h2:hover{
 	visibility: hidden;
 }
 
+.blue_line{
+	border-top: 3px solid blue;
+}
 
 /* Placement Marseille*/
 #Marseille_accommodations{
 	width: 68%;
 	padding: 20px;
-	background: #F2F2F2;
 	margin: auto;
 }
 

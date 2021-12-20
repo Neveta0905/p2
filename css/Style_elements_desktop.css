@@ -16,6 +16,10 @@ header h2{
 	margin-bottom: 15px;
 }
 
+.blue_line{
+	border-top: 3px solid blue;
+}
+
 /* Placement Marseille*/
 #Marseille_accommodations{
 	width: 60%;

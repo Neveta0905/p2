@@ -5,6 +5,7 @@
 	margin-right: 0px;
 }
 
+
 #header_categorie h2:nth-child(2){
 	border-bottom: grey 3px solid;
 }
@@ -144,6 +145,10 @@ a{
 	flex-direction: column;
 }
 
+.activities{
+	width: 80%;
+}
+
 .activities h1{
 	align-self: flex-start;
 }
@@ -152,7 +157,7 @@ a{
 	height: 100%;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	border-radius: 15px;
-	width: 350px;
+	width: 100%;
 	margin-bottom: 15px;
 	height: 190px;
 }
@@ -181,7 +186,7 @@ a{
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
-	width: fit-content;
+	width: 100%;
 }
 
 .double{
