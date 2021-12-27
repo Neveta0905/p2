@@ -21,8 +21,7 @@ header h2:hover{
 
 /* Placement Marseille*/
 #Marseille_accommodations{
-	width: 68%;
-	padding: 20px;
+	width: 100%;
 	margin: auto;
 }
 
@@ -60,8 +59,8 @@ a{
 
 /* Popular Placement */
 #Populars{
-	width: 80%;
-	padding: 15px;
+	width: 100%;
+	padding: 10px;
 	border-radius: 15px;
 	display: flex;
 	flex-direction: column;
